@@ -4,7 +4,7 @@ import time
 import json
 
 
-def Ec2pi_estimator(eR,q,rid):
+def Ec2pi_estimator(eR,q):
     start = time.time()
     
     values=[]    
@@ -16,7 +16,7 @@ def Ec2pi_estimator(eR,q,rid):
         if( ( random1*random1 + random2*random2 ) < 1 ):
             incircle += 1
         if i % q == 0:
-            values.append([incircle,i,rid])
+            values.append([incircle,i])
     elapsed_time = time.time() - start
     return str({
         "values":values,
