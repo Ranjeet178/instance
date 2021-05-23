@@ -25,3 +25,12 @@ def Ec2pi_estimator(eR,q,rid):
 
 
 
+print ('# Args:', len(sys.argv))
+print ('Argument List:', str(sys.argv))
+
+print(sys.argv)
+print(sys.argv[1],sys.argv[2])
+
+
+
+sys.stdout.write(Ec2pi_estimator(int(sys.argv[1]),int(sys.argv[2])))
